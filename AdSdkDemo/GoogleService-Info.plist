@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>599692922762-9122ei9vdrb0tsod60ffbhu1a7vfa5ur.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.599692922762-9122ei9vdrb0tsod60ffbhu1a7vfa5ur</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAffMcewwVFPOkySmzjgD_aFU8roVfwK-E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>599692922762</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.youloft.jtfc</string>
+	<key>PROJECT_ID</key>
+	<string>crashy-f968e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>crashy-f968e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:599692922762:ios:171523a6ffb22fbfad4273</string>
+	<key>DATABASE_URL</key>
+	<string>https://crashy-f968e.firebaseio.com</string>
+</dict>
+</plist>
