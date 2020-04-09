@@ -1,2 +1,2 @@
 # AdSdkDemo
-广告SDK示例Demo
+海外Mopub广告SDK示例
