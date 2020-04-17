@@ -20,5 +20,5 @@ FOUNDATION_EXPORT const unsigned char AdMopubSDKVersionString[];
 #import <AdMopubSDK/NSDictionary+Json.h>
 #import <AdMopubSDK/ApplePayAgent.h>
 #import <AdMopubSDK/PushManager.h>
-//#import <AdMopubSDK/UnityAdapter.h>
+#import <AdMopubSDK/LoginManager.h>
 

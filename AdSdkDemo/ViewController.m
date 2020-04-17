@@ -34,7 +34,7 @@
 #define Height_NavBar ((IS_IPHONE_X==YES || IS_IPHONE_Xr ==YES || IS_IPHONE_Xs== YES || IS_IPHONE_Xs_Max== YES) ? 88.0 : 64.0)
 #define Height_TabBar ((IS_IPHONE_X==YES || IS_IPHONE_Xr ==YES || IS_IPHONE_Xs== YES || IS_IPHONE_Xs_Max== YES) ? 83.0 : 49.0)
 
-@interface ViewController ()<AdManagerDelegate, ApplePayDelegate>
+@interface ViewController ()<AdManagerDelegate, ApplePayDelegate, LoginManagerDelegate>
 
 @end
 
@@ -54,7 +54,7 @@
     
     [[ApplePayAgent shareManager] setDelegate:self];
     
-    [self addBtnsByArr:@[@"添加Banner广告", @"隐藏Banner广告", @"插屏广告", @"加载缓存视频", @"显示缓存视频", @"测试统计", @"发送本地消息1", @"发送本地消息（10s后出现）", @"取消本地消息"]];//, @"调起内购"
+    [self addBtnsByArr:@[@"添加Banner广告", @"隐藏Banner广告", @"插屏广告", @"加载缓存视频", @"显示缓存视频", @"测试统计", @"发送本地消息1", @"发送本地消息（10s后出现）", @"取消本地消息", @"苹果登录"]];//, @"调起内购"
     
 }
 
@@ -109,6 +109,10 @@
             break;
         case 8:
             [self cancleLocalNotificationWithID:1002];//取消本地消
+            break;
+        case 9:
+            [LoginManager shareM].delegate = self;
+            [[LoginManager shareM] loginUseAppleSign];
             break;
             
         default:
@@ -404,6 +408,10 @@
         NSLog(@"恢复购买失败，失败原因：%@", msg);
     }
     
+}
+
+-(void)loginDidCompleteWithDic:(NSDictionary *)msgDic {
+    NSLog(@"%@", msgDic);
 }
 
 -(void)showAlertWithTitle:(const char*)title {
